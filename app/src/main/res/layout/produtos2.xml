@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/box">
+
+
+    <ImageView
+
+        android:id="@+id/nomeProduto"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:textColor="#BE8A63"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/quantidade"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/masone"
+        android:textColor="#BE8A63"
+        android:textSize="22sp" />
+
+    <ImageView
+
+        android:id="@+id/imagemProduto"
+        android:layout_width="26dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+
+        android:scaleType="fitXY"
+        android:textColor="#BE8A63"
+        android:textSize="22sp" />
+
+
+    <TextView
+
+        android:id="@+id/qtdMetro"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="-33dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/masone"
+        android:textColor="#BE8A63"
+        android:textSize="22sp" />
+
+    <TextView
+
+        android:id="@+id/valorunidade"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/masone"
+        android:textColor="#BE8A63"
+        android:textSize="22sp" />
+
+
+    <TextView
+
+        android:id="@+id/valorPiso"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/masone"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textColor="#BE8A63"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/purple_777"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="416dp"
+        android:layout_height="907dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:navGraph="@navigation/mobile_navigation"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="-1dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/arrasteodedoparaolado" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="217dp"
+        android:contentDescription="@string/scroolView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-13dp">
+
+            <ImageButton
+                android:id="@+id/Pisos"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/imageButton3"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pisos"
+                tools:layout_conversion_absoluteHeight="188dp"
+                tools:layout_conversion_absoluteWidth="322dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <ImageButton
+                android:id="@+id/Lajes"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/imageButton4"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/lajes"
+                tools:layout_conversion_absoluteHeight="120dp"
+                tools:layout_conversion_absoluteWidth="347dp"
+                tools:layout_editor_absoluteX="342dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <ImageButton
+                android:id="@+id/Minerais"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/imageButton2"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/minerios"
+                tools:layout_conversion_absoluteHeight="204dp"
+                tools:layout_conversion_absoluteWidth="349dp"
+                tools:layout_editor_absoluteX="689dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <ImageButton
+                android:id="@+id/Esquadrias"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/imageButton2"
+                android:scaleType="centerInside"
+                tools:layout_conversion_absoluteHeight="204dp"
+                tools:layout_conversion_absoluteWidth="349dp"
+                tools:layout_editor_absoluteX="689dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="330dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="54dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/omelhorpreco" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="330dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="17dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/entreemcontato" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

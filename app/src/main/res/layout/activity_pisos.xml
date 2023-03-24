@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_777"
+    android:id="@+id/Pisos"
+    tools:context="com.AdrianoDev.ADS_Ecommerce.Pisos">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        android:background="@color/purple_700"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.MyApplication" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="121dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/activity_pisos"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/voltar"
+        android:src="@drawable/voltar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scroolviewpisos"
+        android:layout_width="358dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/scroolviewpisos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ButtonPisoBranco"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:contentDescription="@string/PisoBranco"
+                android:foreground="@drawable/pisobranco"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="107dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/nomepisobranco" />
+
+            <ImageButton
+                android:id="@+id/ButtonPisoCreme"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/PisoCreme"
+                android:src="@drawable/pisocreme" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="107dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/nomepisocreme" />
+
+            <ImageButton
+                android:id="@+id/ButtonPisoVerde_Bran"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/PisoVerdeBranco"
+                android:src="@drawable/pisoverdebranco"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/nomepisoverdebranco" />
+
+            <ImageButton
+                android:id="@+id/ButtonPisoAreia"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="-613dp"
+                android:contentDescription="@string/PisoAreia"
+                android:src="@drawable/pisoareia"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="107dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="169dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/nomepisoareia" />
+
+            <ImageButton
+                android:id="@+id/ButtonRevestQua_Bran"
+                android:layout_width="140dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/RevestimentoQuadriBranco"
+                android:src="@drawable/pisoquadri" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="137dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/revestquadribranco" />
+
+            <ImageButton
+                android:id="@+id/ButtonPisoAmadeirado"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/PisoAmadeirado"
+                android:src="@drawable/pisoamadeirado" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/activity_pisos"
+                android:src="@drawable/nomepisoamadeirado" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
